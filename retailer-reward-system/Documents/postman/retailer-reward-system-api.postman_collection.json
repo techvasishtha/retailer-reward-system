@@ -1,0 +1,189 @@
+{
+	"info": {
+		"_postman_id": "5af5f5d9-d2da-428d-b713-95cfb31679ee",
+		"name": "retailer-reward-system-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "saveTransaction",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\":\"uma\",\r\n    \"productName\":\"iphonepro\",\r\n    \"productPrice\":25.0,\r\n    \"productQuantity\":5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/transaction/saveTransaction",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"transaction",
+						"saveTransaction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getTransactions",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "userName",
+						"value": "uma",
+						"description": "uma",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/transaction/getTransactions",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"transaction",
+						"getTransactions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getRewards",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "userName",
+						"value": "uma",
+						"description": "uma",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/rewards/getRewards",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"rewards",
+						"getRewards"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getRewardsByMonthly",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "userName",
+						"value": "uma",
+						"description": "uma",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/rewards/getRewardsByMonthly",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"rewards",
+						"getRewardsByMonthly"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getRewardsByQuarterly",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "userName",
+						"value": "uma",
+						"description": "uma",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/rewards/getRewardsByQuarterly",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"rewards",
+						"getRewardsByQuarterly"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
